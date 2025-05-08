@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio BTS SIO SISR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Portfolio SISR</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="bts-sio.html">BTS SIO</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="patrimoine.html">Patrimoine</a></li>
+                <li><a href="tableau.html">Tableau</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Projets -->
+    <section class="projets-section">
+        <div class="container">
+            <h1>Mes Projets</h1>
+            <div class="projets-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="reseau">Réseau</button>
+                <button class="filter-btn" data-filter="systeme">Système</button>
+                <button class="filter-btn" data-filter="securite">Sécurité</button>
+            </div>
+
+            <div class="projets-grid">
+                <!-- Projet 1 -->
+                <div class="projet-card" data-category="reseau">
+                    <div class="projet-image">
+                        <img src="images/projets/vlan-config.jpg" alt="Configuration VLAN">
+                        <div class="projet-overlay">
+                            <button class="view-project" data-project="vlan">Voir le projet</button>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>Configuration VLAN</h3>
+                        <p>Mise en place d'une infrastructure réseau avec segmentation VLAN</p>
+                        <div class="projet-tags">
+                            <span>Cisco</span>
+                            <span>VLAN</span>
+                            <span>Routage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="projet-card" data-category="systeme">
+                    <div class="projet-image">
+                        <img src="images/projets/virtualisation.jpg" alt="Virtualisation">
+                        <div class="projet-overlay">
+                            <button class="view-project" data-project="virtualisation">Voir le projet</button>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>Virtualisation d'Infrastructure</h3>
+                        <p>Mise en place d'une infrastructure virtualisée avec VMware</p>
+                        <div class="projet-tags">
+                            <span>VMware</span>
+                            <span>ESXi</span>
+                            <span>vSphere</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="projet-card" data-category="securite">
+                    <div class="projet-image">
+                        <img src="images/projets/acl-config.jpg" alt="Configuration ACL">
+                        <div class="projet-overlay">
+                            <button class="view-project" data-project="acl">Voir le projet</button>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>Mise en place d'ACL</h3>
+                        <p>Configuration de listes de contrôle d'accès pour la sécurité</p>
+                        <div class="projet-tags">
+                            <span>Cisco</span>
+                            <span>ACL</span>
+                            <span>Sécurité</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="projet-card" data-category="reseau">
+                    <div class="projet-image">
+                        <img src="images/projets/nap-config.jpg" alt="Configuration NAP">
+                        <div class="projet-overlay">
+                            <button class="view-project" data-project="nap">Voir le projet</button>
+                        </div>
+                    </div>
+                    <div class="projet-info">
+                        <h3>Configuration NAP</h3>
+                        <p>Mise en place de Network Access Protection</p>
+                        <div class="projet-tags">
+                            <span>Windows Server</span>
+                            <span>NAP</span>
+                            <span>Sécurité</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Projet -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Le contenu sera injecté dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: zakaria.elkhaloufi@icloud.com</p>
+                    <p>Téléphone: 07 69 79 63 18</p>
+                    
+                </div>
+                <div class="footer-section">
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/zakaria-el-khaloufi-386465360/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/zakaria-sio" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portfolio BTS SIO SISR. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projets.js"></script>
+</body>
+</html> 
